@@ -7,8 +7,6 @@ $title-bg: #161617;
 $title-color: #b08855;
 $light-text: #84858d;
 $indicator-container: #b5b6bd;
-$indicator-color: $title-bg;
-
 
 * {
   box-sizing: border-box;
@@ -37,7 +35,7 @@ header {
     position: relative;
     margin-left: 3rem;
 
-      .immg{
+    .immg{
     position: absolute;
     top: 40px;
     left: 120px; 
@@ -95,7 +93,7 @@ main {
 
     h3 {
       display: inline-block;
-      background: $title-bg;
+      background: #b0895522;
       color: $title-color;
       padding: 2px 10px;
       border-radius: 2px;

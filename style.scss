@@ -17,14 +17,6 @@ $indicator-color: $title-bg;
   font-family: 'Titillium Web', sans-serif;
 }
 
-html {
-  font-size: 18px;
-}
-
-body {
-  min-height: 90vh;
-}
-
 .wrapper{
   max-width: 1000px;
   margin: 0 auto;
@@ -36,26 +28,27 @@ header {
   height: 195px;
   align-items: center;
   gap: 3rem;
-  background: #161617;
+  background: $title-bg;
   
   .profile-img {  
     position: relative;
-    .immg{
-      position: absolute;
-      top: 60px;
-      left: 300px; 
-      width: 200px;
-      height: 100px;    
-     opacity: 30%;
-     border:none;
+
+      .immg{
+    position: absolute;
+    top: 40px;
+    left: 120px; 
+    width: 200px;
+    height: 100px;    
+    opacity: 30%;
+    border:none;
     } 
    
     img {
     height: 160px;
     width: 110px;
     object-fit: cover;
-    border-bottom: 3px solid #b08855;
-    border-top: 3px solid #b08855;
+    border-bottom: 3px solid $title-color;
+    border-top: 3px solid $title-color;
     opacity: 0.7; 
     margin-left: 2rem;   
     }
@@ -71,7 +64,7 @@ header {
     gap: .5rem;
 
   .frontend{
-      color: rgb(187, 187, 187);
+      color: $indicator-container;
       font-size: 1.3rem;
     }
 
@@ -88,13 +81,13 @@ header {
 main {
   padding: 2rem 5rem;
   background: #161617;
-  color: rgb(187, 187, 187);
+  color: $indicator-container;
   font-size: 1.2rem;
   section {
     margin-bottom: 2rem;
 
     a{
-      color:rgb(187, 187, 187);
+      color:$indicator-container;
     }
 
     h3 {
@@ -147,7 +140,7 @@ main {
 
     .immmg{
     position: absolute;
-    bottom: -30px;
+    bottom: 300px;
     left: 1px; 
     width: 300px;
     height: 300px;    
@@ -172,7 +165,7 @@ main {
     }
 
     .indicator {
-      height: 5px;
+      height: 7px;
       background: rgb(187, 187, 187);
 
       .in20 {
@@ -219,7 +212,30 @@ main {
       }
     }
   }
-
-
 }
 
+@media (max-width: 700px) {
+
+  body{
+    background: #161617;
+  }
+  header{
+    height: 200px;
+    align-items: center;
+   
+    h1 {
+    font-size:0.08rem !important;
+    } 
+    .name{
+      font-size: 0.05rem;
+    }
+    img {
+      height: 100px !important;
+      width: 70px !important;
+      object-fit: cover;  
+      } 
+  }
+
+ 
+ 
+}

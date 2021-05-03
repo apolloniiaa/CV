@@ -5,12 +5,6 @@
   padding: 0;
   font-family: 'Titillium Web', sans-serif; }
 
-html {
-  font-size: 18px; }
-
-body {
-  min-height: 90vh; }
-
 .wrapper {
   max-width: 1000px;
   margin: 0 auto; }
@@ -21,13 +15,13 @@ header {
   height: 195px;
   align-items: center;
   gap: 3rem;
-  background: #161617; }
+  background: #15171c; }
   header .profile-img {
     position: relative; }
     header .profile-img .immg {
       position: absolute;
-      top: 60px;
-      left: 300px;
+      top: 40px;
+      left: 120px;
       width: 200px;
       height: 100px;
       opacity: 30%;
@@ -49,7 +43,7 @@ header {
     justify-content: center;
     gap: .5rem; }
     header .name .frontend {
-      color: #bbbbbb;
+      color: #b5b6bd;
       font-size: 1.3rem; }
     header .name h1 {
       line-height: 1;
@@ -61,12 +55,12 @@ header {
 main {
   padding: 2rem 5rem;
   background: #161617;
-  color: #bbbbbb;
+  color: #b5b6bd;
   font-size: 1.2rem; }
   main section {
     margin-bottom: 2rem; }
     main section a {
-      color: #bbbbbb; }
+      color: #b5b6bd; }
     main section h3 {
       display: inline-block;
       background: #15171c;
@@ -96,7 +90,7 @@ main {
     position: relative; }
     main .imgg2 .immmg {
       position: absolute;
-      bottom: -30px;
+      bottom: 300px;
       left: 1px;
       width: 300px;
       height: 300px;
@@ -113,7 +107,7 @@ main {
     main .skill h5 {
       margin-bottom: .5rem; }
     main .skill .indicator {
-      height: 5px;
+      height: 7px;
       background: #bbbbbb; }
       main .skill .indicator .in20 {
         width: 10%; }
@@ -140,5 +134,21 @@ main {
         height: 100%;
         width: 75%;
         background: #b08855; }
+
+@media (max-width: 700px) {
+  body {
+    background: #161617; }
+
+  header {
+    height: 200px;
+    align-items: center; }
+    header h1 {
+      font-size: 0.08rem !important; }
+    header .name {
+      font-size: 0.05rem; }
+    header img {
+      height: 100px !important;
+      width: 70px !important;
+      object-fit: cover; } }
 
 /*# sourceMappingURL=style.css.map */

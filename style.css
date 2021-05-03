@@ -11,6 +11,10 @@ html {
 body {
   min-height: 90vh; }
 
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto; }
+
 header {
   display: flex;
   justify-content: flex-start;
@@ -122,10 +126,14 @@ main {
       main .skill .indicator .in85 {
         width: 80%; }
       main .skill .indicator .in800 {
-        width: 60%; }
+        width: 55%; }
       main .skill .indicator .in100 {
         width: 100%; }
       main .skill .indicator .in140 {
+        width: 80%; }
+      main .skill .indicator .in144 {
+        width: 80%; }
+      main .skill .indicator .in145 {
         width: 80%; }
       main .skill .indicator span {
         display: block;

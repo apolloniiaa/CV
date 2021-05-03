@@ -25,6 +25,11 @@ body {
   min-height: 90vh;
 }
 
+.wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 header {
   display: flex;
   justify-content: flex-start;
@@ -190,13 +195,19 @@ main {
         width: 80%;
       }
       .in800 {
-        width: 60%;
+        width: 55%;
       }
 
       .in100 {
         width: 100%;
       }
       .in140 {
+        width: 80%;
+      }
+      .in144 {
+        width: 80%;
+      }
+      .in145 {
         width: 80%;
       }
 
@@ -211,3 +222,4 @@ main {
 
 
 }
+

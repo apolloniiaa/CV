@@ -5,6 +5,9 @@
   padding: 0;
   font-family: 'Titillium Web', sans-serif; }
 
+body {
+  background-color: #161617; }
+
 .wrapper {
   max-width: 1000px;
   margin: 0 auto; }
@@ -15,7 +18,7 @@ header {
   height: 195px;
   align-items: center;
   gap: 3rem;
-  background: #15171c; }
+  background: #161617; }
   header .profile-img {
     position: relative; }
     header .profile-img .immg {
@@ -35,7 +38,6 @@ header {
       opacity: 0.7;
       margin-left: 2rem; }
   header .name {
-    min-width: 100%;
     min-height: 100%;
     color: #b08855;
     display: flex;
@@ -63,7 +65,7 @@ main {
       color: #b5b6bd; }
     main section h3 {
       display: inline-block;
-      background: #15171c;
+      background: #161617;
       color: #b08855;
       padding: 2px 10px;
       border-radius: 2px;
@@ -111,24 +113,14 @@ main {
       background: #bbbbbb; }
       main .skill .indicator .in20 {
         width: 10%; }
-      main .skill .indicator .in40 {
-        width: 10%; }
-      main .skill .indicator .in60 {
-        width: 60%; }
       main .skill .indicator .in81 {
         width: 40%; }
+      main .skill .indicator .in60 {
+        width: 60%; }
       main .skill .indicator .in85 {
         width: 80%; }
-      main .skill .indicator .in800 {
-        width: 55%; }
       main .skill .indicator .in100 {
         width: 100%; }
-      main .skill .indicator .in140 {
-        width: 80%; }
-      main .skill .indicator .in144 {
-        width: 80%; }
-      main .skill .indicator .in145 {
-        width: 80%; }
       main .skill .indicator span {
         display: block;
         height: 100%;
@@ -142,13 +134,9 @@ main {
   header {
     height: 200px;
     align-items: center; }
-    header h1 {
-      font-size: 0.08rem !important; }
     header .name {
       font-size: 0.05rem; }
-    header img {
-      height: 100px !important;
-      width: 70px !important;
-      object-fit: cover; } }
+      header .name h1 {
+        font-size: 0.08rem; } }
 
 /*# sourceMappingURL=style.css.map */

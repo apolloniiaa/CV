@@ -35,6 +35,7 @@ header {
   
   .profile-img {  
     position: relative;
+    margin-left: 3rem;
 
       .immg{
     position: absolute;
@@ -212,10 +213,22 @@ main {
 
    .name{
     font-size: 0.05rem;
+    margin-left: 1rem;
+ 
 
     h1 {
       font-size:0.08rem 
       }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .skill-container{
+    flex-direction: column;
+  
+    .skill {
+      width: 100%;
     }
   }
 }

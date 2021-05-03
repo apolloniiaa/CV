@@ -20,7 +20,8 @@ header {
   gap: 3rem;
   background: #161617; }
   header .profile-img {
-    position: relative; }
+    position: relative;
+    margin-left: 3rem; }
     header .profile-img .immg {
       position: absolute;
       top: 40px;
@@ -135,8 +136,14 @@ main {
     height: 200px;
     align-items: center; }
     header .name {
-      font-size: 0.05rem; }
+      font-size: 0.05rem;
+      margin-left: 1rem; }
       header .name h1 {
         font-size: 0.08rem; } }
+@media (max-width: 550px) {
+  .skill-container {
+    flex-direction: column; }
+    .skill-container .skill {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

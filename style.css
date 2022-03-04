@@ -201,6 +201,10 @@ main .skill .indicator .in100 {
   width: 100%;
 }
 
+main .skill .indicator .in140 {
+  width: 60%;
+}
+
 main .skill .indicator span {
   display: block;
   height: 100%;

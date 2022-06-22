@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Titillium Web', sans-serif;
@@ -22,12 +22,12 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   height: 195px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 3rem;
   background: #161617;
 }
@@ -42,20 +42,19 @@ header .profile-img .immg {
   top: 40px;
   left: 120px;
   width: 200px;
-  height: 100px;
   opacity: 30%;
   border: none;
 }
 
 header .profile-img img {
-  height: 160px;
   width: 110px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-bottom: 3px solid #b08855;
   border-top: 3px solid #b08855;
   opacity: 0.7;
   margin-left: 2rem;
+  height: 140px;
 }
 
 header .name {
@@ -66,11 +65,11 @@ header .name {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 
@@ -160,10 +159,10 @@ main .skill-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 100%;
   gap: 1rem;
 }
@@ -188,6 +187,9 @@ main .skill .indicator .in20 {
 main .skill .indicator .in81 {
   width: 40%;
 }
+main .skill .indicator .in80 {
+  width: 85%;
+}
 
 main .skill .indicator .in60 {
   width: 60%;
@@ -196,19 +198,22 @@ main .skill .indicator .in60 {
 main .skill .indicator .in85 {
   width: 80%;
 }
+main .skill .indicator .in899 {
+  width: 40%;
+}
 
 main .skill .indicator .in100 {
   width: 100%;
 }
 
 main .skill .indicator .in140 {
-  width: 60%;
+  width: 50%;
 }
 
 main .skill .indicator span {
   display: block;
   height: 100%;
-  width: 75%;
+  width: 100%;
   background: #b08855;
 }
 
@@ -219,8 +224,8 @@ main .skill .indicator span {
   header {
     height: 200px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   header .name {
     font-size: 1.5rem;
@@ -235,8 +240,8 @@ main .skill .indicator span {
   .skill-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .skill-container .skill {
     width: 100%;

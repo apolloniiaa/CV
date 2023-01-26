@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 
-$title-bg: #161617;
+// $title-bg: #161617;
 $title-color: #b08855;
 $light-text: #84858d;
 $indicator-container: #b5b6bd;
@@ -13,7 +13,7 @@ $indicator-container: #b5b6bd;
 }
 
 body {
-  background-color: $title-bg;
+  background-color: rgb(2 5 26);
   overflow-x: hidden;
 }
 .wrapper {
@@ -27,7 +27,7 @@ header {
   height: 195px;
   align-items: center;
   gap: 3rem;
-  background: $title-bg;
+  background: rgb(102 102 102 / 36%);
 
   .profile-img {
     position: relative;
@@ -44,13 +44,13 @@ header {
     }
 
     img {
-      height: 160px;
+      height: 170px;
       width: 110px;
       object-fit: cover;
       border-bottom: 3px solid $title-color;
-      border-top: 3px solid $title-color;
       opacity: 0.7;
       margin-left: 2rem;
+      filter: grayscale(20%);
     }
   }
 
@@ -79,7 +79,7 @@ header {
 
 main {
   padding: 2rem 5rem;
-  background: #161617;
+  background: rgb(102 102 102 / 10%);
   color: $indicator-container;
   font-size: 1.2rem;
   section {
@@ -98,13 +98,28 @@ main {
       margin-top: 1rem;
       margin-bottom: 1.5rem;
       letter-spacing: 3px;
-      text-decoration: underline;
+      border-bottom: 2px solid #76252b;
     }
   }
 
   .details {
     line-height: 1.5;
 
+    .social-links {
+      a {
+        text-decoration: none;
+        .icon {
+          width: 30px;
+          height: 30px;
+          background-color: transparent;
+        }
+        .icon1 {
+          width: 25px;
+          height: 25px;
+          background-color: transparent;
+        }
+      }
+    }
     .e-mail {
       text-decoration: underline;
     }
@@ -166,27 +181,46 @@ main {
       height: 7px;
       background: rgb(187, 187, 187);
 
-      .in20 {
-        width: 10%;
+      .in01 {
+        width: 85%;
       }
 
-      .in81 {
-        width: 40%;
-      }
-
-      .in60 {
-        width: 60%;
-      }
-
-      .in85 {
+      .in02 {
         width: 80%;
       }
+      .in03 {
+        width: 40%;
+      }
+      .in04 {
+        width: 45%;
+      }
 
-      .in100 {
+      .in05 {
+        width: 65%;
+      }
+      .in06 {
+        width: 40%;
+      }
+      .in07 {
+        width: 25%;
+      }
+
+      .in08 {
+        width: 20%;
+      }
+
+      .in09 {
+        width: 5%;
+      }
+
+      .in11 {
+        width: 40%;
+      }
+      .in12 {
         width: 100%;
       }
-      .in140 {
-        width: 60%;
+      .in13 {
+        width: 50%;
       }
 
       span {
@@ -200,19 +234,31 @@ main {
 }
 
 @media (max-width: 700px) {
-  body {
-    background: #161617;
-  }
   header {
     height: 200px;
     align-items: center;
 
+    .profile-img {
+      margin-left: 0;
+    }
     .name {
       font-size: 1.5rem;
-      line-height: 1.7rem;
+      margin-left: -2rem;
 
       h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        margin-left: 1rem;
+        text-align: center;
+        line-height: 1.2;
+      }
+      p {
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+    .profile-img {
+      .immg {
+        display: none;
       }
     }
   }

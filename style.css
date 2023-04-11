@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 body {
-  background-color: rgb(2, 5, 26);
+  background-color: #8c7a70;
   overflow-x: hidden;
 }
 
@@ -22,7 +22,7 @@ header {
   height: 195px;
   align-items: center;
   gap: 3rem;
-  background: rgba(102, 102, 102, 0.36);
+  background: #584b44;
 }
 header .profile-img {
   position: relative;
@@ -38,10 +38,10 @@ header .profile-img .immg {
   border: none;
 }
 header .profile-img img {
-  height: 170px;
+  height: 160px;
   width: 110px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-bottom: 3px solid #b08855;
   opacity: 0.7;
   margin-left: 2rem;
@@ -49,7 +49,7 @@ header .profile-img img {
 }
 header .name {
   min-height: 100%;
-  color: #b08855;
+  color: #edebe5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,6 +58,7 @@ header .name {
 header .name .frontend {
   color: #b5b6bd;
   font-size: 1.3rem;
+  font-weight: 400;
 }
 header .name h1 {
   line-height: 1;
@@ -69,20 +70,20 @@ header .name h1 {
 
 main {
   padding: 2rem 5rem;
-  background: rgba(102, 102, 102, 0.1);
-  color: #b5b6bd;
+  background: #e8e0da;
+  color: #33221c;
   font-size: 1.2rem;
 }
 main section {
   margin-bottom: 2rem;
 }
 main section a {
-  color: #b5b6bd;
+  color: #33221c;
 }
 main section h3 {
-  display: inline-block;
-  background: rgba(176, 137, 85, 0.1333333333);
-  color: #b08855;
+  /* display: inline-block; */
+  /* background: #150b0717; */
+  color: #33221c;
   padding: 2px 10px;
   border-radius: 2px;
   margin-top: 1rem;
@@ -97,13 +98,13 @@ main .details .social-links a {
   text-decoration: none;
 }
 main .details .social-links a .icon {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   background-color: transparent;
 }
 main .details .social-links a .icon1 {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
 }
 main .details .e-mail {
@@ -119,10 +120,9 @@ main .education .school h5 {
   font-size: 1rem;
 }
 main .education .school p {
-  font-weight: bold;
   font-size: 0.9rem;
   letter-spacing: 1px;
-  color: rgb(187, 187, 187);
+  color: #33221c;
 }
 main .imgg2 {
   position: relative;
@@ -154,22 +154,22 @@ main .skill .indicator {
   background: rgb(187, 187, 187);
 }
 main .skill .indicator .in01 {
-  width: 85%;
+  width: 90%;
 }
 main .skill .indicator .in02 {
-  width: 80%;
+  width: 85%;
 }
 main .skill .indicator .in03 {
-  width: 40%;
+  width: 60%;
 }
 main .skill .indicator .in04 {
-  width: 45%;
+  width: 50%;
 }
 main .skill .indicator .in05 {
-  width: 65%;
+  width: 60%;
 }
 main .skill .indicator .in06 {
-  width: 40%;
+  width: 50%;
 }
 main .skill .indicator .in07 {
   width: 25%;
@@ -181,7 +181,7 @@ main .skill .indicator .in09 {
   width: 5%;
 }
 main .skill .indicator .in11 {
-  width: 40%;
+  width: 50%;
 }
 main .skill .indicator .in12 {
   width: 100%;
@@ -193,7 +193,7 @@ main .skill .indicator span {
   display: block;
   height: 100%;
   width: 75%;
-  background: #b08855;
+  background: #33221c;
 }
 
 @media (max-width: 700px) {
@@ -229,4 +229,4 @@ main .skill .indicator span {
   .skill-container .skill {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

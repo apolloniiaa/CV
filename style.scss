@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 
-// $title-bg: #161617;
 $title-color: #b08855;
 $light-text: #84858d;
 $indicator-container: #b5b6bd;
@@ -13,7 +12,6 @@ $indicator-container: #b5b6bd;
 }
 
 body {
-  background-color: rgb(2 5 26);
   overflow-x: hidden;
 }
 .wrapper {
@@ -22,12 +20,12 @@ body {
 }
 
 header {
+  background: rgba(102, 102, 102, 0.1);
   display: flex;
   justify-content: flex-start;
   height: 195px;
   align-items: center;
   gap: 3rem;
-  background: rgb(102 102 102 / 36%);
 
   .profile-img {
     position: relative;
@@ -48,38 +46,34 @@ header {
       width: 110px;
       object-fit: cover;
       border-bottom: 3px solid $title-color;
-      opacity: 0.7;
+      opacity: 0.8;
       margin-left: 2rem;
-      filter: grayscale(20%);
     }
   }
 
   .name {
     min-height: 100%;
-    color: $title-color;
+    color: #635d5d;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
-
-    .frontend {
-      color: $indicator-container;
-      font-size: 1.3rem;
-    }
+    z-index: 999999;
 
     h1 {
       line-height: 1;
       letter-spacing: 2;
       font-style: normal;
-      font-size: 1rem;
+      font-size: 2rem;
       letter-spacing: 2px;
     }
   }
 }
 
 main {
+  border-left: 1px solid rgba(102, 102, 102, 0.1);
+  border-right: 1px solid rgba(102, 102, 102, 0.1);
   padding: 2rem 5rem;
-  background: rgb(102 102 102 / 10%);
   color: $indicator-container;
   font-size: 1.2rem;
   section {
@@ -182,31 +176,31 @@ main {
       background: rgb(187, 187, 187);
 
       .in01 {
-        width: 85%;
+        width: 90%;
       }
 
       .in02 {
-        width: 80%;
+        width: 85%;
       }
       .in03 {
-        width: 40%;
+        width: 60%;
       }
       .in04 {
-        width: 45%;
+        width: 70%;
       }
 
       .in05 {
-        width: 65%;
+        width: 75%;
       }
       .in06 {
-        width: 40%;
+        width: 70%;
       }
       .in07 {
         width: 25%;
       }
 
       .in08 {
-        width: 20%;
+        width: 40%;
       }
 
       .in09 {
@@ -214,7 +208,7 @@ main {
       }
 
       .in11 {
-        width: 40%;
+        width: 55%;
       }
       .in12 {
         width: 100%;

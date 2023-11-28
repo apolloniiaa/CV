@@ -1,13 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,400;1,100;1,200;1,300;1,400;1,600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Noto Serif Display", serif;
 }
 
 body {
   overflow-x: hidden;
+  background: rgb(255, 255, 255);
 }
 
 .wrapper {
@@ -16,7 +17,7 @@ body {
 }
 
 header {
-  background: rgba(102, 102, 102, 0.1);
+  background: rgb(58, 58, 58);
   display: flex;
   justify-content: flex-start;
   height: 195px;
@@ -35,19 +36,20 @@ header .profile-img .immg {
   height: 100px;
   opacity: 30%;
   border: none;
+  filter: grayscale(1);
 }
 header .profile-img img {
   height: 170px;
   width: 110px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-bottom: 3px solid #b08855;
+  border-bottom: 3px solid white;
   opacity: 0.8;
   margin-left: 2rem;
 }
 header .name {
   min-height: 100%;
-  color: #635d5d;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,50 +65,63 @@ header .name h1 {
 }
 
 main {
-  border-left: 1px solid rgba(102, 102, 102, 0.1);
-  border-right: 1px solid rgba(102, 102, 102, 0.1);
+  background: #262626;
   padding: 2rem 5rem;
-  color: #b5b6bd;
+  color: white;
   font-size: 1.2rem;
 }
 main section {
   margin-bottom: 2rem;
 }
 main section a {
-  color: #b5b6bd;
+  color: white;
+  font-weight: 300;
 }
 main section h3 {
   display: inline-block;
-  background: rgba(176, 137, 85, 0.1333333333);
-  color: #b08855;
+  background: rgba(255, 255, 255, 0.29);
+  color: white;
   padding: 2px 10px;
   border-radius: 2px;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   letter-spacing: 3px;
-  border-bottom: 2px solid #76252b;
+  border-bottom: 2px solid white;
+  font-weight: 500;
+  font-style: italic;
 }
 main .details {
   line-height: 1.5;
 }
-main .details .social-links a {
+main .details p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+main .details a {
+  font-weight: 300;
+  font-weight: italic;
   text-decoration: none;
+  font-size: 1rem;
+}
+main .details .social-links {
+  margin-top: 1rem;
+}
+main .details .social-links a {
+  background-color: #5d5d5d;
 }
 main .details .social-links a .icon {
   width: 30px;
   height: 30px;
-  background-color: transparent;
+  background-color: #f0f0f0;
 }
 main .details .social-links a .icon1 {
-  width: 25px;
-  height: 25px;
-  background-color: transparent;
-}
-main .details .e-mail {
-  text-decoration: underline;
+  width: 30px;
+  height: 30px;
+  background-color: #f0f0f0;
 }
 main .profile p {
   line-height: 1.5;
+  font-weight: 300;
 }
 main .education .school:nth-child(2) {
   margin-bottom: 1rem;
@@ -120,6 +135,9 @@ main .education .school p {
   letter-spacing: 1px;
   color: rgb(187, 187, 187);
 }
+main .experience .sales p {
+  color: rgb(187, 187, 187);
+}
 main .imgg2 {
   position: relative;
 }
@@ -131,6 +149,7 @@ main .imgg2 .immmg {
   height: 300px;
   opacity: 30%;
   border: none;
+  filter: grayscale(1);
 }
 main .skill-container {
   display: flex;
@@ -147,7 +166,7 @@ main .skill h5 {
 }
 main .skill .indicator {
   height: 7px;
-  background: rgb(187, 187, 187);
+  background: rgba(187, 187, 187, 0.35);
 }
 main .skill .indicator .in01 {
   width: 90%;
@@ -189,24 +208,39 @@ main .skill .indicator span {
   display: block;
   height: 100%;
   width: 75%;
-  background: #b08855;
+  background: #f7f7f7;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
+  main {
+    padding: 2rem;
+  }
+  main .hobbies .imgg2 .immmg {
+    width: 238px;
+    height: 240px;
+  }
+  main .skill-container {
+    flex-direction: column;
+  }
+  main .skill-container .skill {
+    width: 100%;
+  }
   header {
-    height: 200px;
     align-items: center;
+    gap: 1rem;
   }
   header .profile-img {
     margin-left: 0;
   }
   header .name {
     font-size: 1.5rem;
-    margin-left: -2rem;
+    margin-left: 0;
+    font-weight: 100;
+    font-style: italic;
   }
   header .name h1 {
     font-size: 1rem;
-    margin-left: 1rem;
+    font-weight: 100;
     text-align: center;
     line-height: 1.2;
   }
@@ -216,13 +250,5 @@ main .skill .indicator span {
   }
   header .profile-img .immg {
     display: none;
-  }
-}
-@media (max-width: 550px) {
-  .skill-container {
-    flex-direction: column;
-  }
-  .skill-container .skill {
-    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
